@@ -7,21 +7,33 @@
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
   </nav>
 
+  <!-- Background Section -->
   <div class="background contact">
     <div class="overlay">
       <h1>Contact Us</h1>
-      <p>Email us at: travel@checknchill.in or WhatsApp below 👇</p>
+      <p>We’d love to hear from you!</p>
     </div>
   </div>
 
+  <!-- Contact Form Section -->
+  <div class="form-container">
+    <h2>Send Us a Message</h2>
+    <form action="https://formspree.io/f/mwkgejzv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- WhatsApp Button -->
   <a class="whatsapp" href="https://wa.me/918950743998" target="_blank">💬</a>
 </body>
 </html>
