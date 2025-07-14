@@ -1,4 +1,4 @@
-
+/* Reset and Base Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -7,6 +7,7 @@ body, html {
   color: white;
 }
 
+/* Background Styles */
 .background {
   background-size: cover;
   background-position: center;
@@ -30,6 +31,7 @@ body, html {
   background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1');
 }
 
+/* Content Overlay */
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 2rem;
@@ -37,6 +39,7 @@ body, html {
   max-width: 600px;
 }
 
+/* WhatsApp Button */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -49,3 +52,17 @@ body, html {
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
+
+/* ✅ Navigation Bar Styles */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar ul
