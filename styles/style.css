@@ -53,16 +53,39 @@ body, html {
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* ✅ Navigation Bar Styles */
+/* ✅ Navigation Bar */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Transparent black */
+  background: rgba(0, 0, 0, 0.6);
   padding: 15px 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
-  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #FFD700;
+  color: black;
 }
 
 .navbar ul
