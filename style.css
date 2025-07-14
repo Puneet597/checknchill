@@ -1,32 +1,50 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  color: white;
+}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f2f8fa;
-    color: #333;
+.background {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-header {
-    background: #008080;
-    color: white;
-    padding: 1em;
-    text-align: center;
+
+.home {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* beach */
 }
-nav a {
-    margin: 0 1em;
-    color: white;
-    text-decoration: none;
+
+.about {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); /* mountain */
 }
-main {
-    padding: 2em;
+
+.contact {
+  background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1'); /* travel */
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
